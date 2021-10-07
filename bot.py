@@ -7,6 +7,9 @@ from pyrogram import Client, filters
 import requests
 from bs4 import BeautifulSoup
 import re
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
+from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, CallbackContext
+
 
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
