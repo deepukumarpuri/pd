@@ -4,10 +4,11 @@ import time
 from urllib.parse import urlparse
 import aiohttp
 from pyrogram import Client, filters
+from pyrogram import filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import requests
 from bs4 import BeautifulSoup
 import re
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery, InlineQuery, InputTextMessageContent
 
 
 
