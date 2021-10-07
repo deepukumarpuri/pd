@@ -26,7 +26,7 @@ bot = Client('pdisk bot',
              sleep_threshold=0)
 
 @bot.on_message(filters.command('start') & filters.private & ~filters.edited)
-async def start_handler(bot, message):
+async def start(bot, message):
     await m.reply_text(
             text='🙋 Hey Bruh!!\nI am Instant Telegram File to Link Generator Bot.\n\nSend me any file & see the magic!',
             reply_markup=InlineKeyboardMarkup(
