@@ -7,8 +7,8 @@ from pyrogram import Client, filters
 import requests
 from bs4 import BeautifulSoup
 import re
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
-from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, CallbackContext
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery, InlineQuery, InputTextMessageContent
+
 
 
 API_ID = environ.get('API_ID')
@@ -24,25 +24,19 @@ bot = Client('pdisk bot',
              workers=50,
              sleep_threshold=0)
 
+@bot.on_message(filters.command('start') & filters.private)
+async def start(bot, message):
+    await message.reply(
+        f"**𝗛𝗘𝗟𝗟𝗢🎈{message.chat.first_name}!**\n\n"
+        "𝐈'𝐦 𝐚 𝐏𝐝𝐢𝐬𝐤 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐫 𝐛𝐨𝐭. 𝐉𝐮𝐬𝐭 𝐬𝐞𝐧𝐝 𝐦𝐞 𝐥𝐢𝐧𝐤 𝐨𝐫 𝐅𝐮𝐥𝐥 𝐩𝐨𝐬𝐭... \n 𝐓𝐡𝐢𝐬 𝐛𝐨𝐭 𝐢𝐬 𝐦𝐚𝐝𝐞 𝐛𝐲 @ParitoshPky_Official💖")
 
-
-logger = logging.getLogger(__name__)
-
-
-def start(update: Update, context: CallbackContext) -> None:
-    """Sends a message with three inline buttons attached."""
-    keyboard = [
-        [
-            InlineKeyboardButton("Bot", callback_data='https//'),
-            InlineKeyboardButton("omg", callback_data='https//t.me'),
-        ],
-        [InlineKeyboardButton("Option 3", callback_data='httpd')],
-    ]
-
-    reply_markup = InlineKeyboardMarkup(keyboard)
-
-    update.message.reply_text('Please choose:', reply_markup=reply_markup)
-
+START_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('Help', callback_data='help'),
+        InlineKeyboardButton('About', callback_data='about'),
+        InlineKeyboardButton('Close', callback_data='close')
+        ]]
+    )
 
 @bot.on_message(filters.text & filters.private)
 async def pdisk_uploader(bot, message):
