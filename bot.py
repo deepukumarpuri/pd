@@ -25,7 +25,7 @@ bot = Client('pdisk bot',
              sleep_threshold=0)
 
 
-)
+
 logger = logging.getLogger(__name__)
 
 
