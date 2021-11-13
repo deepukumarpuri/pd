@@ -58,30 +58,26 @@ PDiskBot = Client(
 
 
 START_BUTTONS = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🗣️ MOVIE GROUP", url="https://t.me/{Config.MOVIE}")],
-             [InlineKeyboardButton("ℹ️ Help", callback_data="help"),
-              InlineKeyboardButton("🤖 About", callback_data="about"), 
-              InlineKeyboardButton("⛔ Close", callback_data="close")], 
-             ]
-          )
-
+        [[
+        InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
+        InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about'),
+        InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close')
+        ]]
+    )
 HELP_BUTTONS = InlineKeyboardMarkup(
-            [
-                [[InlineKeyboardButton("🏡 Home", callback_data="home"),
-                 [InlineKeyboardButton("🤖 About", callback_data="about"),
-                 InlineKeyboardButton("📢 Movie Channel ", url="https://t.me/DKBOTZ"),
-                 InlineKeyboardButton("⛔ Close", callback_data="close")]
-            ]
-        )
-
+        [[
+        InlineKeyboardButton('Hᴏᴍᴇ', callback_data='home'),
+        InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about'),
+        InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close')
+        ]]
+    )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
-            [
-                [InlineKeyboardButton("📮 Feedback Dev", url="https://t.me/DKBOTZHELP")],
-                [InlineKeyboardButton("🏡 Home", callback_data="home"),
-                 InlineKeyboardButton("📢 Movie Channel ", url="https://t.me/DKBOTZ"),
-                 InlineKeyboardButton("⛔ Close", callback_data="close")]
-            ]
-        )
+        [[
+        InlineKeyboardButton('Hᴏᴍᴇ', callback_data='home'),
+        InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
+        InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close')
+        ]]
+    )
 @PDiskBot.on_message(filters.private & filters.command("start"))
 async def start_handler(bot: Client, m: Message, cb=False):
     await AddUserToDatabase(bot, m)
