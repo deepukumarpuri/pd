@@ -69,7 +69,7 @@ HELP_BUTTONS = InlineKeyboardMarkup(
             [
                 [[InlineKeyboardButton("🏡 Home", callback_data="home"),
                  [InlineKeyboardButton("🤖 About", callback_data="about"),
-                 InlineKeyboardButton("📢 Movie Channel ", url="https://t.me/{Config.MOVIE_CHL}),
+                 InlineKeyboardButton("📢 Movie Channel ", url="https://t.me/DKBOTZ),
                  InlineKeyboardButton("⛔ Close", callback_data="close")]
             ]
         )
@@ -78,7 +78,7 @@ ABOUT_BUTTONS = InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("📮 Feedback Dev", url="https://t.me/DKBOTZHELP")],
                 [InlineKeyboardButton("🏡 Home", callback_data="home"),
-                 InlineKeyboardButton("📢 Movie Channel ", url="https://t.me/{Config.MOVIE_CHL}),
+                 InlineKeyboardButton("📢 Movie Channel ", url="https://t.me/DKBOTZ),
                  InlineKeyboardButton("⛔ Close", callback_data="close")]
             ]
         )
