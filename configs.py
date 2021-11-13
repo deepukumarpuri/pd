@@ -12,7 +12,7 @@ class Config(object):
     LOG_CHANNEL = os.environ.get("LOG_CHANNEL")
     MOVIE = os.environ.get("MOVIE", "DK_BOTZ")
     MOVIE_CHL = os.environ.get("MOVIE_CHL", "PDISKHINDIMOVIVE")
-    PDISK_DOMAIN = int(os.environ.get("PDISK_DOMAIN", "1287353197"))
+    PDISK_DOMAIN = int(os.environ.get("PDISK_DOMAIN", "https://www.pdisks.com/"))
     MAX_RESULTS = int(os.environ.get("MAX_RESULTS", "50"))
     PDISK_USERNAME = os.environ.get("PDISK_USERNAME")
     PDISK_PASSWORD = os.environ.get("PDISK_PASSWORD")
