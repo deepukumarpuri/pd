@@ -1,31 +1,28 @@
-# Pdisk Uploader Bot 🔥
+# PDisk-Videos-Search
+A Telegram bot for searching videos in your PDisk account by [Anonymous](https://t.me/DKBOTZHELP).
 
-Upload on Pdisk by Url, File and also by direct forward post from other channel...
+### Configs
+- `API_ID` - Get from [@TeleORG_Bot](https://t.me/TeleORG_Bot)
+- `API_HASH` - Get from [@TeleORG_Bot](https://t.me/TeleORG_Bot)
+- `BOT_TOKEN` - Get from [@BotFather](https://t.me/BotFather)
+- `PDISK_USERNAME` - Your PDisk Account Username/Email
+- `PDISK_PASSWORD` - Your PDisk Account Password
+- `MAX_RESULTS` - Max Search Results Number
+- `PDISK_DOMAIN` - Choose any from `https://www.cofilink.com/`, `https://www.pdisk1.net/`, `https://www.pdisk.net/`
 
-## Features
+### Commands
+```
+start - Check Bot Alive or Not
+request - Search Videos
+```
 
-- [x] Url Upload
+## Host Bot
+### Deploy to Heroku
+Click Below Button to Deploy to Heroku:
 
-- [x] Post to Post Conversion
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-- [x] Permanent Thumbnail Support
 
-- [ ] Direct File / Video Upload
 
-### Installation
-
-#### The Easy Way
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/deepukumarpuri/pd)
-
-##### Required Variables
-
-- `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
-- `API_ID`: Get this value from [telgram.org](https://my.telegram.org/apps) Or By Telegram Bot [TgApiextractorBot](https://telegram.dog/TgApiextractorBot)
-- `API_HASH`: Get this value from [telgram.org](https://my.telegram.org/apps)
-- `PDISK_API_KEY`: Create [PDisk](https://www.pdislin.com/earn?referUid=mvrkrd) account then get this value from [PDisk API](https://www.pdisk.me/use-api)
-- `THUMB_URL`: Get permanent image url from [@HK_telegraph_BOT](https://telegram.me/HK_telegraph_BOT)
-
-##### Credit
-
-- Me [Paritosh Kumar](https://github.com/ParitoshPky) For This Repo
+### Support Group:
+<a href="https://t.me/DK_BOTZ"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram"></a>

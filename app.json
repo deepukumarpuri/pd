@@ -1,0 +1,98 @@
+{
+    "name": "PDisk-Videos-Search",
+    "description": "A Telegram bot for searching videos in your PDisk account by @AbirHasan2005.",
+    "keywords": [
+        "telegram",
+        "bot",
+        "pdisk",
+        "account",
+        "videos",
+        "search"
+    ],
+    "repository": "https://github.com/AbirHasan2005/PDisk-Videos-Search",
+    "website": "https://github.com/AbirHasan2005/PDisk-Videos-Search",
+    "success_url": "https://github.com/AbirHasan2005/PDisk-Videos-Search",
+    "env": {
+        "API_ID": {
+            "description": "Get from https://t.me/TeleORG_Bot",
+            "required": true
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get from https://t.me/TeleORG_Bot",
+            "required": true
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Get from https://t.me/BotFather",
+            "required": true
+        },
+        "PDISK_USERNAME": {
+            "description": "Your PDisk Account Username/Email",
+            "required": true
+            "value": "DKBOTZ"
+        },
+        "BOT_OWNER": {
+            "description": "Bot Owner UserID"
+            "value": ""
+        },
+        "MONGODB_URI": {
+            "description": "MongoDB Database URI for Saving UserID for Broadcast. Tutorial: https://www.youtube.com/watch?v=aXlF80Cn7iU"
+            "value": ""
+        },
+        "UPDATES_CHANNEL": {
+            "description": "ID of a Channel which you want to do Force Sub to use the bot. Example: -100123456789",
+            "required": false
+            "value": "DKBOTZ"
+        },
+        "LOG_CHANNEL": {
+            "description": "Logs Channel ID for some Tracking XD. Example: -100123456789"
+            "value": ""
+        },
+        "MOVIE": {
+            "description": "GROUP LINK",
+            "value": "DK_BOTZ"
+        },
+        "MOVIE_CHL": {
+            "description": "CHANNEL LINK",
+            "value": "PDISKHINDIMOVIVE"
+        },
+        "SESSION_NAME": {
+            "description": "Bot's Session Name."
+            "value": "DKBOTZ"
+        },
+        "PDISK_PASSWORD": {
+            "description": "Your PDisk Account Password",
+            "required": true
+            "value": ""
+        },
+        "MAX_RESULTS": {
+            "description": "Max Search Results Number",
+            "required": true
+            "value": "50"
+        },
+        "PDISK_DOMAIN": {
+            "description": "PDisk Default Domain",
+            "required": false,
+            "value": "https://www.pdisk.net/"
+        }
+    },
+    "stack": "heroku-20",
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
+        },
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
