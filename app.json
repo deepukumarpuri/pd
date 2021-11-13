@@ -10,18 +10,16 @@
         "search"
     ],
     "repository": "https://github.com/deepukumarpuri/pd",
-    "website": "https://github.com/deepukumarpuri/pd",
-    "success_url": "https://github.com/deepukumarpuri/pd",
+    "website": "https://github.com/AbirHasan2005/PDisk-Videos-Search",
+    "success_url": "https://github.com/AbirHasan2005/PDisk-Videos-Search",
     "env": {
         "API_ID": {
             "description": "Get from https://t.me/TeleORG_Bot",
             "required": true
-            "value": ""
         },
         "API_HASH": {
             "description": "Get from https://t.me/TeleORG_Bot",
             "required": true
-            "value": ""
         },
         "BOT_TOKEN": {
             "description": "Get from https://t.me/BotFather",
@@ -30,51 +28,23 @@
         "PDISK_USERNAME": {
             "description": "Your PDisk Account Username/Email",
             "required": true
-            "value": "DKBOTZ"
-        },
-        "BOT_OWNER": {
-            "description": "Bot Owner UserID"
-            "value": ""
-        },
-        "MONGODB_URI": {
-            "description": "MongoDB Database URI for Saving UserID for Broadcast. Tutorial: https://www.youtube.com/watch?v=aXlF80Cn7iU"
-            "value": ""
-        },
-        "UPDATES_CHANNEL": {
-            "description": "ID of a Channel which you want to do Force Sub to use the bot. Example: -100123456789",
-            "required": false
-            "value": "DKBOTZ"
-        },
-        "LOG_CHANNEL": {
-            "description": "Logs Channel ID for some Tracking XD. Example: -100123456789"
-            "value": ""
-        },
-        "MOVIE": {
-            "description": "GROUP LINK",
-            "value": "DK_BOTZ"
-        },
-        "MOVIE_CHL": {
-            "description": "CHANNEL LINK",
-            "value": "PDISKHINDIMOVIVE"
-        },
-        "SESSION_NAME": {
-            "description": "Bot's Session Name."
-            "value": "DKBOTZ"
         },
         "PDISK_PASSWORD": {
             "description": "Your PDisk Account Password",
             "required": true
-            "value": ""
         },
         "MAX_RESULTS": {
             "description": "Max Search Results Number",
             "required": true
-            "value": "50"
+        },
+        "AUTH_CHATS": {
+            "description": "Allow only authorized users to use the request command. Put user IDs or Chat IDs. For multiple IDs separate using space.",
+            "required": false
         },
         "PDISK_DOMAIN": {
             "description": "PDisk Default Domain",
             "required": false,
-            "value": "https://www.pdisk.net/"
+            "value": "https://www.pdisks.com/"
         }
     },
     "stack": "heroku-20",
